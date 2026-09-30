@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AntiRegret プライバシーポリシー</title>
+<meta name="description" content="iOS アプリ AntiRegret のプライバシーポリシー。本アプリは利用者の情報を収集しません。">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #666666;
+    --rule: #e2e2e2;
+    --accent: #2b5fa8;
+    --panel: #f6f7f9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #16181c;
+      --fg: #e8e8ea;
+      --muted: #a0a4ab;
+      --rule: #2e3238;
+      --accent: #7aa9e8;
+      --panel: #1e2126;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #16181c;
+    --fg: #e8e8ea;
+    --muted: #a0a4ab;
+    --rule: #2e3238;
+    --accent: #7aa9e8;
+    --panel: #1e2126;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+                 "Noto Sans JP", "Yu Gothic", sans-serif;
+    line-height: 1.85;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 3rem 16px 6rem;
+  }
+  h1 {
+    font-size: 1.7rem;
+    line-height: 1.4;
+    margin: 0 0 .5rem;
+    letter-spacing: .01em;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: .9rem;
+    margin: 0 0 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin: 3rem 0 .75rem;
+    padding-top: .5rem;
+    letter-spacing: .01em;
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.4em; }
+  li { margin-bottom: .4rem; }
+  strong { font-weight: 600; }
+  .lede {
+    background: var(--panel);
+    border-left: 3px solid var(--accent);
+    padding: 1rem 1.25rem;
+    margin: 0 0 1rem;
+    border-radius: 0 6px 6px 0;
+  }
+  .lede p:last-child { margin-bottom: 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 1.25rem;
+    font-size: .95rem;
+  }
+  th, td {
+    text-align: left;
+    padding: .6rem .75rem;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 600;
+    background: var(--panel);
+    white-space: nowrap;
+  }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .9rem;
+  }
+  @media (max-width: 480px) {
+    main { padding-top: 2rem; }
+    h1 { font-size: 1.45rem; }
+    table { font-size: .875rem; }
+    th, td { padding: .5rem .5rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>AntiRegret プライバシーポリシー</h1>
+<p class="updated">最終更新日: 2026年9月30日</p>
+
+<div class="lede">
+<p>AntiRegret(以下「本アプリ」)は、個人開発者が提供する iOS アプリです。本アプリは、利用者の情報を収集しません。このページでは、本アプリが何を扱い、何を扱わないかを説明します。</p>
+</div>
+
+<h2>1. 収集する情報</h2>
+<p><strong>本アプリは、利用者の情報を一切収集・送信しません。</strong></p>
+<ul>
+  <li>利用者登録(アカウント作成)はありません</li>
+  <li>利用者を識別する ID を作成しません</li>
+  <li>広告・解析(アクセス解析、行動ログ)・クラッシュレポートの SDK を組み込んでいません</li>
+  <li>開発者が利用者のデータを閲覧する手段はありません</li>
+</ul>
+
+<h2>2. 端末の中に保存される情報</h2>
+<p>本アプリで入力・記録した内容は、すべて端末内のデータベース(SQLite)に保存されます。端末の外に送信されることはありません。</p>
+<table>
+  <thead>
+    <tr><th scope="col">保存されるもの</th><th scope="col">内容</th></tr>
+  </thead>
+  <tbody>
+    <tr><th scope="row">メモ</th><td>動画の URL・タイトル・メモ本文、金言の本文・出典・メモ</td></tr>
+    <tr><th scope="row">タグ</th><td>利用者が作成したタグの名前</td></tr>
+    <tr><th scope="row">再会の記録</th><td>「実行した / 後回し / スキップ」などの操作と、その日時</td></tr>
+    <tr><th scope="row">リマインドの日時</th><td>利用者が設定した通知の日時</td></tr>
+    <tr><th scope="row">登録した場所</th><td>利用者が付けた場所の名前と、その位置の緯度・経度・半径</td></tr>
+  </tbody>
+</table>
+<p>これらは本アプリのアプリ内領域にのみ保存されます。本アプリのサーバーは存在しません。</p>
+
+<h2>3. 位置情報の利用について</h2>
+<p>本アプリは、利用者が設定画面から場所を登録した場合にのみ位置情報を使います。</p>
+<ul>
+  <li>用途は「登録した場所に着いたかどうか」の判定だけです。到着したときに、その日の見返し(再会)があればお知らせします(1日1回まで)</li>
+  <li>iOS の領域監視(ジオフェンス)機能を使います。移動の軌跡を継続的に記録することはありません</li>
+  <li>取得した位置は端末内にのみ保存され、開発者を含む第三者に送信されることはありません</li>
+  <li>バックグラウンドでの位置情報の利用許可(「常に許可」)を求めるのは、アプリを開いていないときにも到着をお知らせするためです</li>
+  <li>位置情報の利用は、設定タブで登録した場所を削除するか、iOS の設定アプリから本アプリの位置情報の許可を「許可しない」に変更すれば、いつでも停止できます</li>
+</ul>
+
+<h2>4. 通知について</h2>
+<p>本アプリの通知はすべて端末内で作られるローカル通知です。通知の内容が外部のサーバーを経由することはありません。通知は、iOS の設定アプリからいつでも停止できます。</p>
+
+<h2>5. 外部サービスへのリンク</h2>
+<p>保存した動画を開くと、その URL に応じて Safari や各サービスのアプリ(Instagram、YouTube など)が起動します。移動先での取り扱いは、各サービスのプライバシーポリシーに従います。本アプリは、利用者がどの動画をいつ開いたかを外部に送信しません。</p>
+
+<h2>6. 第三者提供</h2>
+<p>本アプリは利用者の情報を収集しないため、第三者に提供する情報はありません。</p>
+
+<h2>7. データの削除</h2>
+<p>端末から本アプリを削除すると、保存されていたメモ・タグ・記録・登録した場所はすべて削除されます。開発者側に控えは残りません(そもそも送信されていません)。</p>
+
+<h2>8. 子どものプライバシー</h2>
+<p>本アプリは特定の年齢層を対象としていません。情報を収集しないため、子どもから情報を集めることもありません。</p>
+
+<h2>9. 本ポリシーの変更</h2>
+<p>本アプリの機能変更にあわせて、このポリシーを更新することがあります。変更した場合は、このページの最終更新日を改めます。</p>
+
+<h2>10. お問い合わせ</h2>
+<p>本アプリおよび本ポリシーに関するお問い合わせ先:</p>
+<p>連絡先メールアドレス: <a href="mailto:ss.shoya777@gmail.com">ss.shoya777@gmail.com</a></p>
+
+<footer>
+AntiRegret ── 保存した知見を、忘れる前に実行に移すためのメモアプリ
+</footer>
+
+</main>
+</body>
+</html>
